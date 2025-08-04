@@ -1,0 +1,46 @@
+name: Legendray
+version: 1.0.0
+main: org.nospawnmob.ItzAbood69.Legendray
+api-version: 1.12
+author: ItzAbood69
+description: Legendary weapons and armor with special abilities for Minecraft 1.12.2
+
+commands:
+  giveitem:
+    description: Give custom items to players
+    usage: /giveitem <item>
+    aliases: [gi, give]
+    permission: legendray.give
+    permission-message: "&cYou don't have permission to use this command!"
+
+  legendrayreload:
+    description: Reload the plugin configuration
+    usage: /legendrayreload
+    aliases: [lr, reload]
+    permission: legendray.reload
+    permission-message: "&cYou don't have permission to reload the configuration!"
+
+  armorlegend:
+    description: Gives the full legendary armor set
+    usage: /armorlegend
+    aliases: [al, legend]
+    permission: legendray.give
+    permission-message: "&cYou don't have permission to use this command!"
+
+  legendrayhelp:
+    description: Shows plugin help
+    usage: /legendrayhelp
+    aliases: [lhelp, help]
+    permission: legendray.help
+    permission-message: "&cYou don't have permission to use this command!"
+
+permissions:
+  legendray.give:
+    description: Allows player to give custom items
+    default: op
+  legendray.reload:
+    description: Allows player to reload plugin configuration
+    default: op
+  legendray.help:
+    description: Allows player to see help
+    default: true

@@ -1,0 +1,169 @@
+# Custom Items Configuration File
+# this plugin made by ItzAbood69
+# for  support search = dsc.gg/ZoneMine
+# Knockback Configuration for Pyro Axe and DeathBringer
+knockback:
+  ground_horizontal_multiplier: 0.3
+  ground_vertical_multiplier: 0.3
+  air_horizontal_multiplier: 0.35
+  air_vertical_multiplier: 0.0
+  sprint_multiplier_horizontal: 1.0
+  sprint_multiplier_vertical: 0.0
+  sprint_yaw_factor: 0.5
+
+# Add this new section:
+# Knockback settings
+# Weapon damage multipliers
+weapons:
+  pyro:
+    damage_multiplier: 3.0
+  deathbringer:
+    damage_multiplier: 3.0
+    lifesteal_percent: 0.25
+
+
+items:
+  pyro:
+    multiplier: 3
+    name: '&4Pyro Axe'
+    enchantments:
+      sharpness: 5
+      fireaspect: 2
+    lore:
+      - '&4I come from the Iron Hills'
+      - '&a{USERNAME} {MONTH}/{DATE}/{YEAR}#{TIME}'
+    sounds:
+      - 'ANVIL_LAND'
+      - 'ZOMBIE_DESTROY_DOOR'
+
+  deathbringer:
+    multiplier: 3
+    name: '&4DeathBringer'
+    enchantments:
+      sharpness: 5
+      fireaspect: 2
+    lore:
+      - '&4&oDeathbringer'
+      - '&4&oLifesteal'
+      - '&a{USERNAME} {MONTH}/{DATE}/{YEAR}#{TIME}'
+    lifesteal: 0.25
+
+  apollos:
+    name: '&bApollos Crest'
+    enchantments:
+      protection: 5
+      unbreaking: 3
+      thorns: 3
+      fireprotection: 4
+    lore:
+      - '&4&oGlowing'
+      - '&4&oImplants'
+      - '&a{USERNAME} {MONTH}/{DATE}/{YEAR}#{TIME}'
+    effects:
+      - 'NIGHT_VISION:3'
+      - 'NO_HUNGER'
+
+  aegis:
+    name: '&4* &8Aegis &4*'
+    enchantments:
+      protection: 5
+      unbreaking: 3
+      thorns: 3
+      fireprotection: 4
+    lore:
+      - '&2Infused with Strength'
+      - '&a{USERNAME} {MONTH}/{DATE}/{YEAR}#{TIME}'
+    effects:
+      - 'STRENGTH:2'
+
+  ethereal:
+    name: '&8&lEthereal Leggings'
+    enchantments:
+      protection: 5
+      unbreaking: 3
+      thorns: 3
+      fireprotection: 4
+    lore:
+      - '&2Infused with Invisibility'
+      - '&a{USERNAME} {MONTH}/{DATE}/{YEAR}#{TIME}'
+    effects:
+      - 'INVISIBILITY:1'
+
+  hermes:
+    name: '&6Hermes Boots'
+    enchantments:
+      protection: 5
+      unbreaking: 3
+      thorns: 3
+      fireprotection: 4
+      featherfalling: 4
+    lore:
+      - '&4Infused with Speed'
+      - '&a{USERNAME} {MONTH}/{DATE}/{YEAR}#{TIME}'
+    effects:
+      - 'SPEED:2'
+
+  bunny:
+    name: '&eBunny Boots'
+    enchantments:
+      unbreaking: 10
+    lore:
+      - '&eInfused with Air'
+      - '&a{USERNAME} {MONTH}/{DATE}/{YEAR}#{TIME}'
+    effects:
+      - 'JUMP_BOOST:2'
+
+  donorset:
+    name: '&b&o{USERNAME}''s Donor Set'
+    helmet_enchantments:
+      protection: 5
+      unbreaking: 3
+      thorns: 3
+      fireprotection: 4
+    chestplate_enchantments:
+      protection: 5
+      unbreaking: 3
+      thorns: 3
+      fireprotection: 4
+    leggings_enchantments:
+      protection: 5
+      unbreaking: 3
+      thorns: 3
+      fireprotection: 4
+    boots_enchantments:
+      protection: 5
+      unbreaking: 3
+      thorns: 3
+      fireprotection: 4
+    sword_enchantments:
+      sharpness: 5
+      fireaspect: 2
+    pickaxe_enchantments:
+      efficiency: 5
+      unbreaking: 3
+      fortune: 3
+    lore:
+      - '&a{MONTH}/{DATE}/{YEAR}#{TIME}'
+
+# General Settings
+settings:
+  # Whether to show messages when receiving items
+  show_receive_messages: false
+
+  # Whether lore recognition is case sensitive
+  case_sensitive_lore: true
+
+  # Update interval for armor effects (in ticks, 20 ticks = 1 second)
+  armor_effect_update_interval: 20
+# Message settings
+messages:
+  enabled: true
+  prefix: "&8[&bItzAbood69 Legendray&8]&r "
+  only_players: "&cOnly players can use this command!"
+  giveitem_usage: "&cUsage: /giveitem <pyro|deathbringer|apollos|aegis|ethereal|hermes|bunny|donorset>"
+  unknown_item: "&cUnknown item type!"
+  received_item: "&aYou received a custom item!"
+  received_donorset: "&aYou received the complete Donor Set!"
+  no_permission: "&cYou don't have permission!"
+  config_reloaded: "&aConfiguration reloaded!"
+  received_armorlegend: "&aYou received the Armor Legend set!"
